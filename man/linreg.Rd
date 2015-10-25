@@ -4,7 +4,7 @@
 \alias{linreg}
 \title{Linear regression}
 \usage{
-linreg(y, X)
+linreg(x, y)
 }
 \arguments{
 \item{y}{response vector (1 x n)}
@@ -12,7 +12,7 @@ linreg(y, X)
 \item{X}{covariate matrix (p x n) with no intercept}
 }
 \value{
-A (p x 1) matrix of estimated parameters
+A list with 4 elements: coefficients, vcov, sigma, df
 }
 \description{
 Runs an OLS regression not unlike \code{\link{lm}}
