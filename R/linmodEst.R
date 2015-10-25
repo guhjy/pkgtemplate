@@ -11,11 +11,11 @@
 #' data(mtcars)
 #' X <- as.matrix(mtcars[, c("cyl", "disp", "hp")])
 #' y <- mtcars[, "mpg"]
-#' linreg(y, X)
+#' linmodEst(y, X)
 #'
 #' @export
 #'
-linreg <- function(x, y) {
+linmodEst <- function(x, y) {
   ## compute QR-decomposition of x
   qx <- qr(x)
   ## compute (x’x)^(-1) x’y
