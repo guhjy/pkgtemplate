@@ -8,6 +8,9 @@ Maintainer: Who to complain to <yourfault@somewhere.net>
 Description: More about what it does (maybe more than one line)
 License: What license is it under?
 LazyData: TRUE
-Suggests: testthat
+Suggests: testthat,
+    knitr,
+    rmarkdown
 LinkingTo: Rcpp, RcppArmadillo
 Imports: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
